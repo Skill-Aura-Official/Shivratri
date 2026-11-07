@@ -3,7 +3,6 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Skill-Aura-Official/Shivratri?style=social)](https://github.com/Skill-Aura-Official/Shivratri/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Skill-Aura-Official/Shivratri?style=social)](https://github.com/Skill-Aura-Official/Shivratri/network/members)
 [![Language Used](https://img.shields.io/badge/language-Python-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 This project is a **fully hand-drawn colored sketch animation** built using Python to celebrate the holy occasion of **Shravan Maha Shivratri**. It visualizes Lord Shiva with a custom SVG illustration brought to life through a unique sketching animation.
 
@@ -47,14 +46,10 @@ Activate it:
 Run the following commands:
 
 ```bash
-pip install opencv-python pillow svg.path geocoder tqdm requests geopy svgpathtools
-pip install sketchpy --no-deps
-pip install numpy
+python -m pip install sketchpy
 ```
 
-> 🔧 **Tested on Python 3.10+**
-
-Older versions of Python may cause compatibility issues.
+The script imports `sketchpy.canvas` and Python `turtle`. A desktop session and working Tk installation are required. No dependency lock or supported-version matrix is supplied; full GUI animation and dependency installation were not verified in this documentation review.
 
 ---
 
@@ -63,6 +58,8 @@ Older versions of Python may cause compatibility issues.
 ```bash
 python Shiva1.py
 ```
+
+Run from the repository directory: the SVG path is relative to the current working directory. There is no web server, database or account provisioning. A safe syntax check is `python -m py_compile Shiva1.py`; it does not prove GUI rendering.
 
 Once executed, the script reads the custom SVG file and animates a hand-drawn rendering of Lord Shiva.
 
@@ -91,7 +88,7 @@ Be a part of our growing learning community:
 
 ## ✉️ License
 
-This project is licensed under the MIT License. Feel free to use, share, and modify it with attribution.
+The prior README stated MIT, but this revision contains no LICENSE file. Confirm the intended terms with the maintainer before redistribution; this documentation does not grant or change a licence. Existing SkillAura and artwork attribution is preserved.
 
 ---
 
